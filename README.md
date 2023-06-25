@@ -11,4 +11,12 @@ lord.create_storybook(story_prompt)
 ```
 
 # Requirements
-OpenAI API Key needs to be provided to `StoryLord` as an kwarg, or set an env. variable.
+OpenAI API Key needs to be provided to the `StoryLord` class by either:
+- setting the `OPENAI_API_KEY` env. variable (preferred)
+- setting the `openai_api_key` kwarg 
+
+# Development
+`tox -e dev && source .tox/dev/bin/activate`
+
+# Testing
+`tox`
